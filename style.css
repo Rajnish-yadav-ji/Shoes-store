@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+.store{
+    margin: auto;
+    width: 60%;
+    min-height: 100%;
+    
+}
+
+.shoes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    padding: 30px;
+}
+
+.card{
+    width: 30%;
+    min-height: 380px;
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 10px rgb(201, 201, 201);
+    margin-bottom: 20px;
+}
+.image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: 0.5s ease-out all;
+}
+
+.image > img:hover{
+    scale: 1.2;
+    
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.description p:first-child, p:last-child{
+    font-weight: 900;
+}
+
+.description p:nth-child(2), p:nth-child(3){
+    color: rgba(0, 0, 0, 0.753);
+}
+
+
+.cart > img{
+    width: 50px;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    text-align: center;
+    background: linear-gradient(to left,blue,rgb(226, 156, 18));
+    color: white;
+    
+}
+.cart{
+    height: 45px;
+    width: 45px;
+    
+}
+/* Responsiveness */
+
+@media screen and (max-width:320px){
+    .store {
+        margin: auto;
+        width: 90%;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 2rem;
+        color: rgb(20, 11, 152); 
+    }
+    .card {
+        width: 100%;
+        min-height: 300px;
+        padding: 8px;
+        border-radius: 30px;
+        box-shadow: 7px 7px 10px rgb(201, 201, 201);
+        margin-bottom: 20px;
+    }
+    .image {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    .cart{
+        height: 45px;
+        width: 45px;
+        
+    }
+    .cart > img {
+        width: 45px;
+    }
+    
+}
+
+/* Mobile devices */
+@media screen and (min-width:320px) and (max-width:480px){
+    .store {
+        margin: auto;
+        width: 90%;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #cf58c5d9; 
+        padding: 20px;
+    }
+    .card {
+        display: flex;
+        width: 100%;
+        min-height: 195px;
+        padding: 8px;
+        border-radius: 30px;
+        box-shadow: 7px 7px 10px rgb(201, 201, 201);
+        margin-bottom: 20px;
+    }
+    .image {
+        width: 85%;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 30px;
+        
+    }
+    .image > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        transition: 0.5s ease-out all;
+    }
+    .details {
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 20px;
+        gap: 10px;
+    }
+
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .store {
+        margin: auto;
+        width: 95%;
+        min-height: 100%;
+    }
+    .card {
+        width: 48%;
+        min-height: 367px;
+        padding: 8px;
+        border-radius: 30px;
+        box-shadow: 7px 7px 10px rgb(201, 201, 201);
+        margin-bottom: 20px;
+    }
+    .image {
+        margin: auto;
+        width: 90%;
+        height: 210px;
+        
+    }
+
+}
+/* Laptop devices */
+@media screen and (min-width:769px) and (max-width:1024px){
+    .store {
+        width: 95%;
+    }
+    .card {
+        width: 33%;
+        min-height: 272px;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+    }
+}
+/* Large devices */
+@media screen and (min-width:1025px) and (max-width:1200px){
+    .store {
+        width: 95%;
+    }
+    .card {
+        width: 24%;
+        min-height: 272px;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+    }
+}
+@media screen and (min-width:1201px) and (max-width:1300px){
+    .store {
+        width: 80%;
+    }
+    .card {
+        width: 33%;
+        min-height: 272px;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+    }
+}
